@@ -3,6 +3,8 @@
 
 Written in pure HTML, CSS and Javascript
 
+![alt text](https://i.ibb.co/bbX3TK7/screen-capture.gif)
+
 ## Pages
 
 - Unlock page (swipe to unlock)
