@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.007" x2="0.5" y2="0.937" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.302"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="-0.024" x2="0.5" y2="0.996" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="0" x2="0.5" y2="0.948" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient-2"/>
+    <clipPath id="clip-contacts">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="contacts" clip-path="url(#clip-contacts)">
+    <g id="contacts-2" data-name="contacts" transform="translate(0 0.002)">
+      <path id="Path_7" data-name="Path 7" d="M141,180H39A38.922,38.922,0,0,1,0,141V39A38.922,38.922,0,0,1,39,0H141a38.922,38.922,0,0,1,39,39V141a38.922,38.922,0,0,1-39,39Z" transform="translate(0 0)" fill="#d8d6cc" fill-rule="evenodd"/>
+      <path id="Path_8" data-name="Path 8" d="M126.037,92.875v1.68a38.87,38.87,0,0,1-12.12,28.3,37.9,37.9,0,0,1-6,4.68V92.875Z" transform="translate(53.957 46.436)" fill="#4cd964" fill-rule="evenodd"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="18.129" height="44.999" transform="translate(161.869 94.308)" fill="#ff9500"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="18.129" height="44.999" transform="translate(161.869 49.309)" fill="#5ac8fa"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="18.129" height="15" transform="translate(161.869 49.309)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="18.129" height="15" transform="translate(161.871 94.31)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_9" data-name="Path 9" d="M107.914,92.875v12h16.715a39.157,39.157,0,0,0,1.413-10.312V92.875Z" transform="translate(53.955 46.436)" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      <path id="Path_10" data-name="Path 10" d="M126.042,36.979A38.874,38.874,0,0,0,107.914,4.041V47.289h18.128Z" transform="translate(53.955 2.021)" fill="#c4c2ba" fill-rule="evenodd"/>
+      <path id="Path_11" data-name="Path 11" d="M74.924,137.515A56.278,56.278,0,1,0,18.7,81.237a56.278,56.278,0,0,0,56.221,56.278Zm0-37.461c-19.161,0-33.446,8.892-37.978,16.522a51.891,51.891,0,1,1,75.955.057C108.37,108.946,94.142,100.054,74.924,100.054Zm0-9.925c11.015,0,19.448-9.351,19.448-21.57,0-11.474-8.605-21.111-19.448-21.111-10.785,0-19.448,9.638-19.39,21.111C55.534,80.778,63.967,90.072,74.924,90.129Z" transform="translate(9.352 12.479)" fill="#a9a29a"/>
+      <path id="Path_12" data-name="Path 12" d="M107.918,171.911a38.979,38.979,0,0,0,9-7.841V11.884a38.98,38.98,0,0,0-9-7.841Z" transform="translate(53.957 2.022)" fill-rule="evenodd" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slide to Unlock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="unlock-body">
+    <div class="slide-page">
+        <div id="time-container">
+            <div id="date"></div>
+            <h1 id="time" class="time"></h1>
+        </div>
+        <div id="swipe-container">
+            <i class="fas fa-arrow-up" id="arrowIcon"></i>
+            <p id="slideText">Swipe up to Unlock</p>
+        </div>
+    </div>
+</body>
+
+<script src="unlock.js"></script>
+<script type="text/javascript">
+    function updateTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var timeString = hours + ":" + minutes;
+        document.getElementById('time').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000); // update every 1 second
+    updateTime(); // also update immediately
+
+    function updateDate() {
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        var month = monthNames[currentDate.getMonth()];
+        var weekDay = weekDays[currentDate.getDay()];
+
+        var dateString = weekDay + ' ' + day + ' ' + month;
+
+        document.getElementById('date').textContent = dateString;
+    }
+
+    updateDate();
+
+
+</script>
+
+</html>

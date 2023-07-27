@@ -1,0 +1,371 @@
+/* Home Page Styles */
+body.home-body {
+    background: url('img/bg2.jpeg') no-repeat center center fixed; 
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.notification {
+    position: absolute;
+    top: -2px;
+    right: -25px;
+    background-color: #ff3b30;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; /* You can adjust this value to fit your needs */
+    margin-bottom: 20px; /* Space between apps */
+}
+
+.appbig {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%; /* You can adjust this value to fit your needs */
+    margin-bottom: 20px; /* Space between apps */
+}
+
+.appbig-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    padding: 5px; /* Add padding to adjust the position of the content */
+    padding-left: 20px;
+}
+
+.appbig-overlay p {
+    color: white;
+    font-size: 14px;
+    margin: 0; /* Remove the default margin */
+}
+
+.appbig-overlay h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0; /* Remove the default margin */
+}
+
+.pchange {
+  font-size: 12px;
+  color: #58DD7C;
+}
+
+.app img {
+    width: 80%; /* Relative to the .app div */
+    height: auto; /* Keep the image aspect ratio */
+}
+
+.appbig img {
+    width: 100%; /* Relative to the .app div */
+    height: auto; /* Keep the image aspect ratio */
+}
+
+.app p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 8px;
+    color: white;
+}
+
+.appbig p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 8px;
+    color: white;
+}
+
+.dock .app {
+    position: relative; /* Add this line */
+}
+
+.dock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px); /* Subtract the size of the left and right margins */
+    background-color: rgba(18, 18, 18, 0.8); /* Adjust the background color with opacity */
+    backdrop-filter: blur(8px); /* Add the backdrop blur effect */
+    padding: 20px 0 0; /* Add padding only to the top */
+    margin: 0 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    justify-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+.dock .app img {
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pages {
+  display: flex;
+  width: 100%; /* Set the width to 100% to fill the container */
+  transition: transform 0.3s;
+  touch-action: pan-y; /* Allow horizontal swipe only */
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Add this line to stack content vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking of page content */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.slide-page {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: bottom .2s ease-out;
+}
+
+.slider-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator-dot.active {
+  background-color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 9999;
+}
+
+.modal.open {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+    color: white;
+}
+
+.modal.open .modal-content {
+    transform: scale(1);
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modalClose {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.close-btn {
+    background-color: #ff3b30;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.close-btn:focus {
+    outline: none;
+}
+
+.modal.open .modal-content {
+    animation: modalOpen 0.3s forwards;
+}
+
+.modal.close .modal-content {
+    animation: modalClose 0.3s forwards;
+}
+
+.location {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.temperature {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.fa-thermometer-half {
+    font-size: 12px;
+}
+
+.weather {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.fa-cloud-rain {
+    font-size: 18px;
+}
+
+/* Unlock Page */
+
+body.unlock-body {
+    background: url('img/bg2.jpeg') no-repeat center center fixed; 
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+
+.slide-page {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: bottom .2s ease-out;
+}
+
+#time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+h1#time {
+    font-size: 4em;
+    margin-bottom: 2em;
+}
+
+#date {
+    font-size: 1em;
+}
+
+#swipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the elements horizontally */
+    justify-content: flex-end; /* This will keep the elements towards the bottom */
+    height: 50%;
+    padding-bottom: 20px; /* Padding at the bottom to create space */
+}
+
+#arrowIcon {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#slideText {
+    font-size: 1em;
+}

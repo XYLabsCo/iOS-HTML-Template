@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="clip-news">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="news" clip-path="url(#clip-news)">
+    <g id="Layer1" transform="translate(0 0)">
+      <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+        <path id="Path_3" data-name="Path 3" d="M180.176,41.173A40.188,40.188,0,0,0,139.987.983H39.579a39.4,39.4,0,0,0-39.4,39.4V140.912A40.075,40.075,0,0,0,40.25,180.985h99.755a40.17,40.17,0,0,0,40.171-40.171Z" transform="translate(-0.176 -0.983)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_6" data-name="Group 6" transform="translate(33.755 94.418)">
+        <path id="Path_4" data-name="Path 4" d="M15.258,41.669A140.136,140.136,0,0,0,67,93.5H21.9a6.639,6.639,0,0,1-6.64-6.639Z" transform="translate(-15.258 -41.669)" fill="#fd415e" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_7" data-name="Group 7" transform="translate(33.755 33.768)">
+        <path id="Path_5" data-name="Path 5" d="M15.258,21.333a6.617,6.617,0,0,1,6.617-6.619H44.413l83.346,83.235v22.374a6.874,6.874,0,0,1-6.874,6.876H98.507L15.258,43.963" transform="translate(-15.258 -14.713)" fill="#fd415e" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_8" data-name="Group 8" transform="translate(94.521 33.768)">
+        <path id="Path_6" data-name="Path 6" d="M42.265,14.713H87.352A6.649,6.649,0,0,1,94,21.364v45.12A148.01,148.01,0,0,0,42.265,14.713Z" transform="translate(-42.265 -14.713)" fill="#fd415e" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

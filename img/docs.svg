@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#58dd7c"/>
+      <stop offset="1" stop-color="#43be64"/>
+    </linearGradient>
+    <clipPath id="clip-docs">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="docs" clip-path="url(#clip-docs)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="180" height="180" rx="40" stroke="#58dd7c" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-file" data-name="Icon awesome-file" d="M51.488,31.261V0H5.517A5.5,5.5,0,0,0,0,5.517V112.171a5.5,5.5,0,0,0,5.517,5.517H82.749a5.5,5.5,0,0,0,5.517-5.517V36.777H57A5.533,5.533,0,0,1,51.488,31.261ZM88.266,28.02v1.4H58.844V0h1.4a5.512,5.512,0,0,1,3.908,1.609l22.5,22.526A5.5,5.5,0,0,1,88.266,28.02Z" transform="translate(45.867 31.156)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1ac8fb"/>
+      <stop offset="1" stop-color="#1d70f1"/>
+    </linearGradient>
+    <clipPath id="clip-app-store">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="app-store" clip-path="url(#clip-app-store)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="180" height="180" rx="40" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-app-store" data-name="Icon awesome-app-store" d="M82.218,34.635l3.2-5.522A7.185,7.185,0,0,1,97.87,36.288L67.095,89.573H89.358c7.21,0,11.255,8.476,8.125,14.35H32.24a7.175,7.175,0,0,1,0-14.35H50.529L73.953,48.985l-7.316-12.7a7.185,7.185,0,0,1,12.451-7.175l3.13,5.522Zm-27.68,76.674-6.894,11.958a7.185,7.185,0,1,1-12.451-7.175l5.135-8.863c5.768-1.794,10.481-.422,14.209,4.08Zm59.4-21.7h18.676a7.175,7.175,0,1,1,0,14.35H122.244l7,12.134a7.185,7.185,0,0,1-12.451,7.175Q99.118,92.615,90.273,77.333c-6.014-10.376-1.723-20.786,2.532-24.3q7.069,12.134,21.138,36.578Z" transform="translate(7.571 13.81)" fill="#fff"/>
+  </g>
+</svg>
